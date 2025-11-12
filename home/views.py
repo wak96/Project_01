@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from . models import Clients, Work, Services, Profile
 
-def home(request):
+def mainpage(request):
     client = Clients.objects.all()
     work = Work.objects.all()
     services = Services.objects.all()
